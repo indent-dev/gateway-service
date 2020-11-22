@@ -1,4 +1,4 @@
-const endpoint = require('./api/endpoint.json')
+import endpoint from './api/endpoint.json'
 import express, { Request, Response } from 'express'
 import cors from 'cors'
 import errorHandler from './middlewares/errorHandler'
