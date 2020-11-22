@@ -1,0 +1,15 @@
+{
+  "ProductApi": {
+    "product": {
+      "url": "baseUrl/productApi/product",
+      "method": "GET",
+      "desc": "Get all products"
+    },
+    "category": {
+      "url": "baseUrl/productApi/category",
+      "method": "GET",
+      "desc": "Get all category"
+    }
+  },
+  "AccountApi": {}
+}
