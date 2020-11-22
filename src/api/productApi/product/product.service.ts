@@ -6,7 +6,9 @@ export default class ProductService {
     return new Promise(async (resolve, reject) => {
       try {
         const response = (
-          await Axios.get('https://product-service-indent.herokuapp.com/')
+          await Axios.get(
+            'https://product-service-indent.herokuapp.com/product'
+          )
         ).data
         resolve(response)
       } catch (error) {
