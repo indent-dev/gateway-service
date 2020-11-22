@@ -1,15 +1,37 @@
 {
   "ProductApi": {
     "product": {
-      "url": "baseUrl/productApi/product",
-      "method": "GET",
-      "desc": "Get all products"
+      "Get all product": [
+        {
+          "url": "baseUrl/productApi/product",
+          "method": "GET",
+          "body": {}
+        }
+      ]
     },
-    "category": {
-      "url": "baseUrl/productApi/category",
-      "method": "GET",
-      "desc": "Get all category"
-    }
+    "category": [
+      {
+        "Get all category": {
+          "url": "baseUrl/productApi/category",
+          "method": "GET",
+          "body": {}
+        },
+        "Create new category": {
+          "url": "baseUrl/productApi/category",
+          "method": "POST",
+          "body": {
+            "name": "string"
+          }
+        },
+        "Update one category": {
+          "url": "baseUrl/productApi/category/:id",
+          "method": "PUT",
+          "body": {
+            "name": "string"
+          }
+        }
+      }
+    ]
   },
   "AccountApi": {}
 }
