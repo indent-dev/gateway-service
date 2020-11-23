@@ -1,14 +1,41 @@
 {
   "ProductApi": {
-    "product": {
-      "Get all product": [
-        {
+    "product": [
+      {
+        "Get all product": {
+            "url": "baseUrl/productApi/product",
+            "method": "GET",
+            "body": {}
+        },
+        "Create new product":{
           "url": "baseUrl/productApi/product",
-          "method": "GET",
+          "method": "POST",
+          "body": {
+            "product_name": "string",
+            "price":"number",
+            "category":"CategoryRequest",
+            "image":"string",
+            "isDeleted":"boolean"
+          }
+        },
+        "Update one product":{
+          "url": "baseUrl/productApi/product/:id",
+          "method": "PUT",
+          "body": {
+            "product_name": "string",
+            "price":"number",
+            "category":"CategoryRequest",
+            "image":"string",
+            "isDeleted":"boolean"
+          }
+        },
+        "Delete one product":{
+          "url": "baseUrl/productApi/product/:id",
+          "method": "DELETE",
           "body": {}
         }
-      ]
-    },
+      }
+    ],
     "category": [
       {
         "Get all category": {
